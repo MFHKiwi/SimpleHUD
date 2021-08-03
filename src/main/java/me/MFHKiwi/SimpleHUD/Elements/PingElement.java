@@ -12,6 +12,7 @@ public class PingElement extends TextElement {
 	public String getText() {
 		MinecraftClient mc = MinecraftClient.getInstance();
 		PlayerListEntry entry = mc.getNetworkHandler().getPlayerListEntry(mc.player.getUuid());
+		if (entry == null) return "Ping: " + 0 + "ms";
 		if (mc.isInSingleplayer() && !mc.getNetworkHandler().getConnection().isEncrypted()) return "Ping: " + 0 + "ms";
 		return "Ping: " + entry.getLatency() + "ms";
 	}
