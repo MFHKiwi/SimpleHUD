@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "simplehud",
+  "version": "${version}",
+
+  "name": "SimpleHud",
+  "description": "A simple HUD mod for Fabric",
+  "authors": [
+    "MFHKiwi"
+  ],
+  "contact": {
+    "homepage": "https://mfhkiwi.github.io",
+    "sources": ""
+  },
+
+  "license": "GPL-3.0",
+
+  "environment": "client",
+  "mixins": [
+    "simplehud.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}

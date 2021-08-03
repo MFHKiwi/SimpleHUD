@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.MFHKiwi.SimpleHUD.Mixins",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+  	"SimpleHUDMixin",
+    "RenderMixin",
+    "FPSGetterMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
