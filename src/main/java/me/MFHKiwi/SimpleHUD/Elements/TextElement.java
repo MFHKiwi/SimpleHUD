@@ -3,7 +3,7 @@ package me.MFHKiwi.SimpleHUD.Elements;
 import net.minecraft.client.MinecraftClient;
 
 public class TextElement {
-	private final MinecraftClient mc = MinecraftClient.getInstance();
+	protected final MinecraftClient mc = MinecraftClient.getInstance();
 	private final String text;
 	private final int colour;
 	
