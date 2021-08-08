@@ -23,7 +23,7 @@ public class RenderMixin implements RenderMixinAccessor {
 	private void onInject(float tickDelta, MatrixStack stack, CallbackInfo info) {
 		if (this.elements.isEmpty()) return;
 		for (TextElement element : this.elements) {
-			renderElement(element, stack, this.mc.textRenderer.fontHeight * this.elements.indexOf(element));
+			renderElement(element, stack, this.mc.textRenderer.fontHeight * this.elements.indexOf(element), 14737632);
 		}
 	}
 	
@@ -31,8 +31,8 @@ public class RenderMixin implements RenderMixinAccessor {
 		this.elements = elements;
 	}
 	
-	private void renderElement(TextElement element, MatrixStack stack, int y) {
+	private void renderElement(TextElement element, MatrixStack stack, int y, int colour) {
 		y += (this.mc.player.getStatusEffects().isEmpty()) ? 1 : 26;
-		this.mc.textRenderer.drawWithShadow(stack, element.getText(), mc.getWindow().getScaledWidth() - element.getWidth(), y, element.getColour());
+		this.mc.textRenderer.drawWithShadow(stack, element.getText(), mc.getWindow().getScaledWidth() - element.getWidth(), y, colour);
 	}
 }

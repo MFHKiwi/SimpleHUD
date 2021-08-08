@@ -1,10 +1,6 @@
 package me.MFHKiwi.SimpleHUD.Elements;
 
 public class CoordsElement extends TextElement {
-
-	public CoordsElement(int colour) {
-		super("", colour);
-	}
 	
 	public String getText() {
 		int x = super.mc.player.getBlockX();

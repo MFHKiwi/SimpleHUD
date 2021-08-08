@@ -7,8 +7,7 @@
   ],
   "client": [
   	"SimpleHUDMixin",
-    "RenderMixin",
-    "FPSGetterMixin"
+    "RenderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

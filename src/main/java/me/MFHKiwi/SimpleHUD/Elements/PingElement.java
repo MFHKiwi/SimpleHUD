@@ -3,10 +3,6 @@ package me.MFHKiwi.SimpleHUD.Elements;
 import net.minecraft.client.network.PlayerListEntry;
 
 public class PingElement extends TextElement {
-
-	public PingElement(int colour) {
-		super("", colour);
-	}
 	
 	public String getText() {
 		PlayerListEntry entry = super.mc.getNetworkHandler().getPlayerListEntry(super.mc.player.getUuid());
